@@ -1,34 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ArkFlame - Vincular wallet</title>
     <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <script src="app.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="wrapper">
-        <div class="content">
-            <div id="step-1" style="display: block;">
-                <h1>Primero debes iniciar sesion</h1>
-                <button onclick="login()">Login with Metamask</button>
-            </div>
-            
-            <div id="step-2" style="display: none;">
-                <h1>Muy bien, ahora añade la red polygon a tu wallet</h1>
-                <button onclick="addChain()">Add chain to your wallet</button>
-            </div>
-
-            <div id="step-3" style="display: none;">
-                <h1>Ya casi terminas. Solo falta añadir el Token a tu wallet</h1>
-                <button onclick="addToken()">Add token to your wallet</button>
-            </div>
-        </div>
-    </div>
+    <div class="claim" id='step-1' style="display: block;">
+		<p><img id='logo' src="https://i.imgur.com/DUxZiAV.jpg" /></p>
+		<p><h2>Primero, tenés que iniciar sesión</h2></p>
+		<p><button id='button' onclick="login()">Vincular con Metamask</button></p>
+	</div>
+	
+	<div class="claim" id='step-2' style="display: none;">
+		<p><img id='logo' src="https://i.imgur.com/DUxZiAV.jpg" /></p>
+		<p><h2>Muy bien, ahora añadí la red Polygon a tu wallet</h2></p>
+		<p><button id='button' onclick="addChain()">Añadir cadena a tu wallet</button></p>
+	</div>
+	
+	<div class="claim" id='step-3' style="display: none;">
+		<p><img id='logo' src="https://i.imgur.com/DUxZiAV.jpg" /></p>
+		<p><h2>Ya casi terminás. Solo falta añadir el token a tu wallet</h2></p>
+		<p><button id='button' onclick="addToken()">Añadir token a tu wallet</button></p>
+	</div>
 
     <script src="app.js"></script>
 </body>
-</html>

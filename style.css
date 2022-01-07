@@ -1,5 +1,32 @@
 body {
-  padding: 0;
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+	margin: 0 auto;
+	background: #e4e4e4;
+	font-family: 'Poppins', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.claim {
+	margin: auto;
+	padding: 50px;
+	background: #fff;
+	text-align: center;
+	border-radius: 20px;
+	box-shadow: 0 5px 8px -5px rgb(0 0 0 / 30%), 0 5px 30px -5px rgb(0 0 0 / 50%);
+}
+
+.claim #logo {
+	width: 120px;
+	border-radius: 50%;
+}
+
+.claim #button {
+	cursor: pointer;
+	background: #ff4842;
+	color: #ffffff;
+	border: none;
+	padding: 12px;
+	font-size: 18px;
+	border-radius: 8px;
 }
