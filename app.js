@@ -17,11 +17,11 @@ async function addChain() {
     params: [
       {
         chainId: "0x89",
-        chainName: "Matic",
+        chainName: "Polygon Mainnet",
         nativeCurrency: {
           name: "Matic",
           symbol: "Matic",
-          decimals: 4, //In number form
+          decimals: 18, //In number form
         },
         rpcUrls: ["https://polygon-rpc.com"],
         blockExplorerUrls: ["https://polygonscan.com/"],
